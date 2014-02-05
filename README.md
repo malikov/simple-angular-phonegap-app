@@ -6,15 +6,15 @@ Simple app made using angular,phonegap, [onsenUI](http://onsenui.io/).
 ## Running the app
 
 Install [node.js](http://nodejs.org/)
-Install [PhoneGap](http://phonegap.com/install/) :
+Install [PhoneGap](http://phonegap.com/install/)
 	npm install -g phonegap
 
-Check if phonegap's installed : 
+Check if phonegap's installed
 	phonegap -v
 
 Create your app using the phonegap's command line :
 	cordova create hello com.example.hello "HelloWorld"
-    cd hello
+	cd hello
 
 Add your platforms :
 	cordova platform add android
