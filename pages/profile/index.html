@@ -1,0 +1,36 @@
+<ons-page class="center">
+	
+		<div ng-controller="ProfileViewCtrl">
+			
+				<h1>Profile Info</h1>
+	 		
+				<form name="profileForm" class="profileForm" style="margin: 0 auto; width: 90%;">
+					<ons-row>
+						<div ng-show="saveSuccess" class="success-message">
+							Successfully saved
+						</div>
+					</ons-row>
+					<ons-row>
+						<input class="topcoat-text-input" type="text" value="{{profile.name}}" placeholder="Enter your name" ng-model="profile.name" name='uName' style="font-size: 20px; width: 80%; margin: 0 auto; text-align: center; padding: 10px;" required/>
+						<div ng-show="profileForm.uName.$dirty && profileForm.uName.$invalid">   
+						   <span ng-show="profileForm.uName.$error.required">
+							Tell us your name.
+						   </span>
+				        </div>
+					</ons-row>
+			        <br/>
+			        <ons-row>
+			    		<input class="topcoat-text-input" type="email" value="{{profile.email}}" placeholder="Enter your email" ng-model="profile.email" name='uEmail' style="font-size: 20px; width: 80%; margin: 0 auto; text-align: center; padding: 10px;"  required/>
+			    		<div class="invalid-form-message invalid-email-input" ng-show="profileForm.uEmail.$dirty && profileForm.uEmail.$invalid">  Invalid:
+				          <span ng-show="profileForm.uEmail.$error.required">Tell us your email.</span>
+				          <span ng-show="profileForm.uEmail.$error.email">This is not a valid email.</span>
+				        </div>
+				    </ons-row>
+		    		<ons-button ng-click="saveInfo()">
+						Save Info
+					</ons-button>
+		    	</form>
+		     
+		</div>
+	
+</ons-page>
