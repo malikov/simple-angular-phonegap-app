@@ -23,8 +23,11 @@ Add your platforms :
 
 	cordova platform add android
 	cordova platform add ios
+	
+Delete all file in your www folder.
 
-Clone this repo in your app's www directory.
+Clone this repo, then copy all files in your wwww folder.
+
 Make sure you have included the splashcreen plugin in your project.
 
 	cordova plugin add org.apache.cordova.splashscreen
