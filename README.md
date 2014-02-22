@@ -4,7 +4,7 @@ Simple app made using angular,phonegap, [onsenUI](http://onsenui.io/).
 
 ## Download the app
 
-Download the [app](https://build.phonegap.com/apps/766112/share).
+Download the [app](https://build.phonegap.com/apps/791155/share).
 
 ## Running the app
 
